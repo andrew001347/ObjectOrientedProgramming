@@ -1,16 +1,15 @@
-import java.util.Random;
-
-
-public class SimulationDriver
+public class MultiAnswer extends Question
 {
-    public static void main(String[] args)
+    public int inputAnswer2;
+    public int inputAnswer3;
+
+    public MultiAnswer(String inputQ, String inputPossible1, String inputPossible2, String inputPossible3, String inputPossible4, int inputAnswer, int inputAnswer2, int inputAnswer3) 
+            
     {
-      Random rand = new Random();
-      Student numofStudent = new Student();
-
-      System.out.println("Testing "+numofStudent.getID()+" student(s)");
-
+        super(inputQ, inputPossible1, inputPossible2, inputPossible3, inputPossible4, inputAnswer);
+        //TODO Auto-generated constructor stub
     }
+    
 }
 
 
