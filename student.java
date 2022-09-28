@@ -11,7 +11,8 @@ public class Student //creating number of students
         this.studentID = String.valueOf(numberOfStudents);
     }
 
-    public String getID() { //return string
+    public String getID() 
+    { 
         return studentID;
     }
 

@@ -7,7 +7,7 @@ public class MultiAnswer extends Question
             
     {
         super(inputQ, inputPossible1, inputPossible2, inputPossible3, inputPossible4, inputAnswer);
-        //TODO Auto-generated constructor stub
+        
     }
     
 }
@@ -16,7 +16,7 @@ public class MultiAnswer extends Question
 /*
  * 
  *  Question[] allQuestions = new Question[10];
-    allQuestions[0]= new Question("What is the shortcut for the copy function on most computers? ", "1) ctrl v ", "2) ctrl z ", "3) ctrl c ", "4) ctrl x ", 3);
+    allQuestions[0]= new Question("What year was the very first model of the iPhone released? ", "1) 1990 ", "2) 2001 ", "3) 2007 ", "4) 2000 ", 3);
     allQuestions[1]= new Question("What is often seen as the smallest unit of memory? ", "1) Byte ", "2) Kilobyte ", "3) Gigabyte ", "4) Terabyte ", 1);
     allQuestions[2]= new Question("What does HTTP stand for? ", "1) HyperText Transfer Protocol ", "2) HyperText Transmit Protocol ", "3) HyperTest Transmit Project ", "4) HyperTest Transfer Protocol ", 1 ;
     allQuestions[3]= new Question("Which country invented tea? ", "1) United Kingdom ", "2) France ", "3) Japan ", "4) China ", 4);
