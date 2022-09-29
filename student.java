@@ -1,20 +1,26 @@
 public class Student //creating number of students 
 {
     
+    int studentID ;
+    int answer1;
+    int answer2;
 
-    private static int numberOfStudents = 0;
-    private String studentID; 
-
-    public Student()
+    public Student(int sid) //feeding a random number as the ID
     {
-        numberOfStudents++;
-        this.studentID = String.valueOf(numberOfStudents);
+        this.studentID = sid;
+
     }
 
-    public String getID() 
-    { 
-        return studentID;
+    public void studentAns1(int ans1)//saving answer1 only
+    {
+        this.answer1 = ans1;
     }
+
+    public void studentAns2(int ans2)//saving answer2 only
+    {
+        this.answer2 = ans2;
+    }
+    
 
 
     

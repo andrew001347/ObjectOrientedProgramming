@@ -5,19 +5,27 @@ public class SimulationDriver
 {
     public static void main(String[] args)
     {
-      Random randAns = new Random();
-      Student numofStudent = new Student();
+        Question s1 = new SingleAnswer("What is often seen as the smallest unit of memory? \n1) Byte \n2) Kilobyte \n3) Gigabyte \n4) Terabyte", 1);
+        Question s2 = new SingleAnswer("When was the company Nike founded? \n1) 1965 \n2) 1982 \n3) 1971 \n4) 1990 ", 3);
 
-      System.out.println("Testing "+numofStudent.getID()+" student(s)");
 
-      SingleAnswer[] SingleAnswer = new SingleAnswer[5];
-      SingleAnswer[0]= new SingleAnswer("What is the shortcut for the copy function on most computers? ", "1) ctrl v ", "2) ctrl z ", "3) ctrl c ", "4) ctrl x ", 3);
-      SingleAnswer[1]= new SingleAnswer("What is often seen as the smallest unit of memory? ", "1) Byte ", "2) Kilobyte ", "3) Gigabyte ", "4) Terabyte ", 1);
-      SingleAnswer[2]= new SingleAnswer("What does HTTP stand for? ", "1) HyperText Transfer Protocol ", "2) HyperText Transmit Protocol ", "3) HyperTest Transmit Project ", "4) HyperTest Transfer Protocol ", 1) ;
-      SingleAnswer[3]= new SingleAnswer("Which country invented tea? ", "1) United Kingdom ", "2) France ", "3) Japan ", "4) China ", 4);
-      SingleAnswer[4]= new SingleAnswer("When was the company Nike founded? ", "1) 1965 ", "2) 1982 ", "3) 1971 ","4) 1990 ", 3);
-  
-      System.out.println("These next questions will have multiple answers.");
+        Question s3 = new MultiAnswer("What two numbers did Kobe Bryant have? \n1)8 \n2)23 \n3)6 \n4)24", 1, 4);
+        Question s4 = new MultiAnswer("Which two colors appear on the Greece flag? \n1) Red \n2)Blue \n3)White \n4)Yellow", 2, 3);
+
+        System.out.println(s1.toString());
+
+        //System.out.println(s1.);
+
+        System.out.println(s2.toString());
+
+        
+
+        System.out.println();
+
+
+
+        System.out.println(s3.toString());
+        System.out.println(s4.toString());
     }
 }
 

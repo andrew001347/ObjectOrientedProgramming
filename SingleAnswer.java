@@ -1,21 +1,34 @@
-public class SingleAnswer extends Question
+class SingleAnswer extends Question
 {
-    
-    public SingleAnswer(String inputQ, String inputPossible1, String inputPossible2, String inputPossible3, String inputPossible4, int inputAnswer) 
-    {
-      super(inputQ, inputPossible1, inputPossible2, inputPossible3, inputPossible4, inputAnswer);
+  int answer;
 
+  public int correctAnswer;
+ 
+  public SingleAnswer(String inputQuestion, int answer)
+  {
+      super(inputQuestion);
+      this.answer = answer;
 
-      Question[] allQuestions = new Question[5];
-      allQuestions[0]= new Question("What is the shortcut for the copy function on most computers? ", "1) ctrl v ", "2) ctrl z ", "3) ctrl c ", "4) ctrl x ", 3);
-      allQuestions[1]= new Question("What is often seen as the smallest unit of memory? ", "1) Byte ", "2) Kilobyte ", "3) Gigabyte ", "4) Terabyte ", 1);
-      allQuestions[2]= new Question("What does HTTP stand for? ", "1) HyperText Transfer Protocol ", "2) HyperText Transmit Protocol ", "3) HyperTest Transmit Project ", "4) HyperTest Transfer Protocol ", 1) ;
-    allQuestions[3]= new Question("Which country invented tea? ", "1) United Kingdom ", "2) France ", "3) Japan ", "4) China ", 4);
-    allQuestions[4]= new Question("When was the company Nike founded? ", "1) 1965 ", "2) 1982 ", "3) 1971 ","4) 1990 ", 3);
+      correctAnswer = answer;
+  }
+  public void setCorrect(int inputAnswer)
+  {
+  correctAnswer = inputAnswer;
+  }
+  public int getCorrect()
+  {
+    return correctAnswer;
+  }
   
-    }
-    
+
+
+
+  @Override public String toString()
+  {
+      return "This is a single answer question, select 1 integers.\n" + super.getinputQuestion();
+  }
 }
+    
 
 
 /*

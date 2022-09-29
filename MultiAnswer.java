@@ -1,17 +1,23 @@
-public class MultiAnswer extends Question
-{
-    public int inputAnswer2;
-    public int inputAnswer3;
+class MultiAnswer extends Question {
+ 
+  double answer1;
+  double answer2;
 
-    public MultiAnswer(String inputQ, String inputPossible1, String inputPossible2, String inputPossible3, String inputPossible4, int inputAnswer, int inputAnswer2, int inputAnswer3) 
-            
-    {
-        super(inputQ, inputPossible1, inputPossible2, inputPossible3, inputPossible4, inputAnswer);
-        
-    }
-    
+  public MultiAnswer(String inputQuestion, double answer1,double answer2)
+  {
+      // calling Shape constructor
+      super(inputQuestion);
+      
+      this.answer1 = answer1;
+      this.answer2 = answer2;
+  }
+
+
+  @Override public String toString()
+  {
+      return "This is a multi answer question, select 2 integers.\n " + super.getinputQuestion();
+  }
 }
-
 
 /*
  * 
