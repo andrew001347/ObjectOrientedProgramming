@@ -12,13 +12,10 @@ public class VotingService
     public static void main(String[] args)     
     {
 
+        
         Random rand = new Random();
-        int ran = rand.nextInt(9)+1 ;//Number of students: 1-10
+        int guessing = rand.nextInt(4)+1; // to automate the process we will be using random numbers between 1-4
 
-        Student numofStudent = new Student();
-
-    
-        System.out.println("Testing "+numofStudent+" student(s)" + ran);
 
         int right = 0;
         int wrong = 0;
@@ -26,29 +23,8 @@ public class VotingService
         int right2 = 0;
         int wrong2 = 0;
 
-/* while() // keeps it going until there are no more questions 
-        if( == )
-        {
-            right++;
-        }
-
-        if( && == )
-        {
-            wrong++;
-        }
-
-    if( == )
-        {
-            right2++;
-        }
-
-        if( && == )
-        {
-            wrong2++;
-        }
 
 
-*/
 
         System.out.println("Number of Right and Wrong (single answer): ");
         System.out.println("Correct: "+ right);

@@ -1,13 +1,13 @@
 public class Student //creating number of students 
 {
     
-    int studentID ;
+    int studentID;
     int answer1;
     int answer2;
 
-    public Student(int sid) //feeding a random number as the ID
+    public Student(int sID) //feeding a random number as the ID
     {
-        this.studentID = sid;
+        this.studentID = sID;
 
     }
 
