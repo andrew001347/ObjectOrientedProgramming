@@ -4,11 +4,7 @@ class SingleAnswer extends Question
   public SingleAnswer(String inputQ, String inputPossible1, String inputPossible2, String inputPossible3,String inputPossible4, int inputAnswer) 
       {
     super(inputQ, inputPossible1, inputPossible2, inputPossible3, inputPossible4, inputAnswer);
-  
-  
-    SingleAnswer[] allQuestions = new SingleAnswer[2]; //generating 2 questions with single choice answers
-    allQuestions[0]= new SingleAnswer("What is the shortcut for the copy function on most computers? ", "1) ctrl v ", "2) ctrl z ", "3) ctrl c ", "4) ctrl x ", 3);
-    allQuestions[1]= new SingleAnswer("What is often seen as the smallest unit of memory? ", "1) Byte ", "2) Kilobyte ", "3) Gigabyte ", "4) Terabyte ", 1);
+
   }
 
 }
